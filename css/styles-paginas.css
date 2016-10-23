@@ -1,0 +1,100 @@
+/*=====================*/
+/* Componentes do site */
+/*=====================*/
+.espaco-logo{
+    width: 100%;
+    height: auto;
+    padding: 5px 0px 5px 0px;
+    background: #f5f5f5;
+}
+
+.container{
+    padding-right: 100px;
+    padding-left: 100px;
+
+}
+
+.linha-pagina{
+    width: 100%;
+    height: 2px;
+    background: #eeeeee;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.espaco-entre-topicos{
+    height: 1em;
+}
+
+
+
+
+/*===========================*/
+/* Cor do footer & Cor NavBar*/
+/*===========================*/
+/*TPI*/
+.exe-html{
+    background: #eeeeee;
+    font-family: Arial;
+}
+#nav-bar-tpi{
+    background: #FB8C00;
+}
+
+#footer-tpi {
+    width: 100%;
+    height: 14em;
+    background: #FB8C00;
+    padding-top: 10px;
+}
+#footer-barra-tpi {
+    width: 100%;
+    height: 2.8em;
+    background: #F57C00;
+}
+/*LP*/
+#nav-bar-lp{
+    background: #43A047;
+}
+#footer-lp {
+    width: 100%;
+    height: 14em;
+    background: #43A047;
+    padding-top: 10px;
+}
+#footer-barra-lp{
+    width: 100%;
+    height: 2.8em;
+    background: #2E7D32;
+}
+/*TLBD*/
+#nav-bar-tlbd{
+    background: #03A9F4;
+}
+#footer-tlbd {
+    width: 100%;
+    height: 14em;
+    background: #03A9F4;
+    padding-top: 10px;
+}
+#footer-barra-tlbd {
+    width: 100%;
+    height: 2.8em;
+    background: #0288D1;
+}
+/*IMC*/
+#nav-bar-imc{
+    background: #009688;
+}
+#footer-imc {
+    width: 100%;
+    height: 14em;
+    background: #009688;
+    padding-top: 10px;
+}
+#footer-barra-imc {
+    width: 100%;
+    height: 2.8em;
+    background: #00695c;
+}
+

@@ -1,0 +1,114 @@
+.button-verde {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button-verde:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button-amarelo {
+    background-color: #FBC02D; /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button-amarelo:hover {
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.4), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button-azul {
+    background-color: #1976D2; /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button-azul:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button-teal {
+    background-color: #00897B; /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button-teal:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button-site {
+    background-color: #0277bd; /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button-site:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+
+
