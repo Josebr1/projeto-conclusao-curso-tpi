@@ -166,7 +166,7 @@ footer {
     right: 0;
     margin: auto;
     height: 65%;
-    min-width: 20%;
+    min-width: 280px;
     background-color: #FFFFFF;
     padding: 16px 16px 16px 16px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
