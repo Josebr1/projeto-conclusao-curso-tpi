@@ -15,10 +15,20 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <?php       
+        session_start();
+        session_destroy();  
+        $email = $_GET['email'];
+        include("validarLogin.php");                
+    ?>
 
 </head>
-<body class="background-login">
 
+
+
+<body class="background-login">
+</script>
 <div class="voltar-tela-principal">
     <a href="#"><i class="material-icons" style="font-size: 60px;" id="tt4">keyboard_arrow_left</i></a>
     <div class="mdl-tooltip" for="tt4">
@@ -33,15 +43,17 @@
     </div>
 
 
-    <form action="#">
+    <form action="?logar&email=<?php echo $email ?>" method="POST">
         <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="email" id="fname">
-            <label class="mdl-textfield__label" for="fname">E-Mail</label>
+            <input class="mdl-textfield__input" type="email" id="femail" name="femail" required="true" value="<?php if (isset($_GET['email'])) {
+                echo $_GET['email'];
+            }?>">
+            <label class="mdl-textfield__label" for="femail">E-Mail</label>
         </div>
         <br />
         <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="password" id="fname">
-            <label class="mdl-textfield__label" for="fname">Senha</label>
+            <input class="mdl-textfield__input" type="password" id="fsenha" name="fsenha" required="true">
+            <label class="mdl-textfield__label" for="fsenha">Senha</label>
         </div>
         <br />
 
