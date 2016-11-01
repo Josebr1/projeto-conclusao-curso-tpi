@@ -60,7 +60,7 @@
         <div class="mdl-textfield mdl-js-textfield"> 
             <input class="mdl-textfield__input" type="password" id="fsenhaRep" name="fsenhaRep" required="true">            
             <label class="mdl-textfield__label" for="fsenhaRep">Repita a senha</label>
-            <i id="senhaIgual" class="material-icons">done</i>
+            <i id="senhaIgual" class="material-icons" hidden>done</i>
         </div>
 
         <br/>
@@ -94,18 +94,16 @@
         }
 
         function verificaIgualdade() {
-            if($('#fsenha').val() != ""){
-                 if(($('#fsenhaRep').val() != $('#fsenha').val())) {
+            if(($('#fsenha').val() != "") || ($('#fsenhaRep').val() != "")){
+			    if(($('#fsenhaRep').val() != $('#fsenha').val())) {
                     errado();
                 } else {
                     certo();
                 }
-                $('#senhaIgual').show();
+				$('#senhaIgual').removeAttr("hidden");                
             }
         }
-
-       
-        $('#senhaIgual').hide();
+		
         $('#fsenhaRep').keyup(function() {
            verificaIgualdade();
         });      
