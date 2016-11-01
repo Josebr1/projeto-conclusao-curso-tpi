@@ -19,7 +19,7 @@
     <?php       
         session_start();
         session_destroy();  
-        $email = $_GET['email'];
+        $email = isset($_GET['email'])?$_GET['email']:'';
         include("validarLogin.php");                
     ?>
 

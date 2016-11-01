@@ -82,25 +82,43 @@
     * Se sim, aparece o icone "done". Se não, aparece o icone "clear" e desabilita o botão de "login".
     * A verificação é feita a cada tecla solta.
     */
+
+        function certo() {
+            $('#senhaIgual').text("done");             
+            $('#btLogin').prop('disabled',false);
+        }
+
+        function errado() {
+            $('#senhaIgual').text("clear");
+            $('#btLogin').prop('disabled',true);            
+        }
+
         function verificaIgualdade() {
             if($('#fsenha').val() != ""){
                  if(($('#fsenhaRep').val() != $('#fsenha').val())) {
-                    $('#senhaIgual').text("clear");
-                    $('#btLogin').prop('disabled',true);
+                    errado();
                 } else {
-                    $('#senhaIgual').text("done");                  
-                    $('#btLogin').prop('disabled',false);
+                    certo();
                 }
                 $('#senhaIgual').show();
             }
         }
 
+       
         $('#senhaIgual').hide();
         $('#fsenhaRep').keyup(function() {
            verificaIgualdade();
         });      
         $('#fsenha').keyup(function() {
             verificaIgualdade();
-        });            
+        });  
+
+        /*Dois keydown para desativar botão pois sem eles mesmo com senhas incompatíveis era possível cadastrar*/
+        $('#fsenhaRep').keydown(function() {
+           errado();
+        });      
+        $('#fsenha').keydown(function() {
+           errado();
+        });           
     </script>
 </html>
