@@ -30,7 +30,7 @@
         <!-- Tabs -->
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
             <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Home</a>
-            <a href="#scroll-tab-2" class="mdl-layout__tab">MEUS CURSOS</a>
+            <a href="#scroll-tab-2" class="mdl-layout__tab">TÓPICOS PHP</a>
             <a href="#scroll-tab-3" class="mdl-layout__tab">ALTERAR DADOS PESSOAIS</a>
             <a href="#scroll-tab-4" class="mdl-layout__tab">ALTERAR SENHA</a>
         </div>
@@ -46,13 +46,13 @@
     </div>
     <main class="mdl-layout__content">
         <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
-            <div class="page-content"><!-- Your content goes here --></div>
+            <div class="page-content"><iframe style="width:100%; height:100%; position: absolute" src="tab-inicial-user.php" frameborder="no"></iframe></div>
         </section>
         <section class="mdl-layout__tab-panel" id="scroll-tab-2">
-            <div class="page-content"><iframe style="width:100%; height:100%; position: absolute" src="http://www.w3schools.com/tags/tag_iframe.asp" frameborder="no"></iframe></div>
+            <div class="page-content"><iframe style="width:100%; height:100%; position: absolute" src="" frameborder="no"></iframe></div>
         </section>
         <section class="mdl-layout__tab-panel" id="scroll-tab-3">
-            <div class="page-content"><!-- Your content goes here --></div>
+            <div class="page-content"><iframe style="width:100%; height:100%; position: absolute" src="tab-inicial-user.php" frameborder="no"></iframe></div>
         </section>
         <section class="mdl-layout__tab-panel" id="scroll-tab-4">
             <div class="page-content"><!-- Your content goes here --></div>
