@@ -39,8 +39,6 @@
         <span class="mdl-layout-title">Pão Code</span>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="">Home Site</a>
-            <a class="mdl-navigation__link" href="">Cursos</a>
-            <a class="mdl-navigation__link" href="">Dados pessoais</a>
             <a class="mdl-navigation__link" href="">Sair</a>
         </nav>
     </div>
@@ -55,7 +53,7 @@
             <div class="page-content"><iframe style="width:100%; height:100%; position: absolute" src="tab-dados-pessoais.php" frameborder="no"></iframe></div>
         </section>
         <section class="mdl-layout__tab-panel" id="scroll-tab-4">
-            <div class="page-content"><!-- Your content goes here --></div>
+            <div class="page-content"><iframe style="width:100%; height:100%; position: absolute" src="tab-alterar-senha.php" frameborder="no"></iframe></div>
         </section>
     </main>
 </div>
