@@ -61,6 +61,6 @@
 <!--Import js.js-->
 <script type="text/javascript" src="js/js.js"></script>
 
-<dir id="footer"></dir>
+<dir id="footer-fixed"></dir>
 </body>
 </html>
