@@ -1,11 +1,11 @@
 <?php
-	if(isset($_GET["cadastrar"])){
+	if(isset($_GET["cadastrar"]) && $_GET["cadastrar"] == true){
 		/*Estabelece conexão com o banco de dados*/
 			include("conecta.php");
 		/*Declaração de variáveis*/
 			$nomeUsuario = $_POST["fname"];
 			$emailCadastro = $_POST["femail"];
-			$senhaCadastro = $_POST["fsenha"];
+			$senhaCadastro = md5($_POST["fsenha"]);
 			$insereBD = "";
 			$jaCadastrado = null;
 			$insere = null;
@@ -25,7 +25,7 @@
 					setcookie("email", $emailCadastro);
 				    header("Location:login.php?email=$emailCadastro");#redireciona para o login	
 				} else { #Se não estiver cadastrado
-					$insereBD = "INSERT INTO usuario (id_user, nome, email, senha, foto) VALUES(null, '$nomeUsuario', '$emailCadastro', '$senhaCadastro', null)";
+					$insereBD = "INSERT INTO usuario (id_user, nome, email, senha, foto, sexo, telefone) VALUES(null, '$nomeUsuario', '$emailCadastro', '$senhaCadastro', null, '1', null)";
 					$insere = $conexao->prepare($insereBD);
 					$insere->execute();
 

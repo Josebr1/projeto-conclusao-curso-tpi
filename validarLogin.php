@@ -1,10 +1,10 @@
 <?php
-	if(isset($_GET["logar"])) {
+	if(isset($_GET["logar"]) && $_GET["logar"] == true) {
 		/*Estabelece conexão com o banco de dados*/
 			include("conecta.php");
 		/*Declaração de variáveis*/
 			$emailLogin = $_POST["femail"];
-			$senhaLogin = $_POST["fsenha"];
+			$senhaLogin = md5($_POST["fsenha"]);
 			$consultaBD = null;
 			$resultadoLogin = null;
 			$dados = null;
@@ -20,10 +20,11 @@
 					$dados = $resultadoLogin->fetch(PDO::FETCH_OBJ);
 					session_start("usuario");
 					$_SESSION["usuario"] = "".$dados->nome;
+					$_SESSION["email"] = "".$emailLogin;
 				    #setcookie("usuario", "".$dados->nome);#Cookie para salvar o nome do usuário (para usar na tela principal)
-				    header("Location:usuario.php");#redireciona para o menu principal
+				    header("Location:menu-tabs-user.php");#redireciona para o menu principal
 				} else {
-					echo "Email ou Senha incorretos";
+					echo "<script>if(confirm('Email ou Senha incorretos')) document.location = 'login.php?email=$emailLogin';</script>";
 				}
 			}
 		/*Fim da autenticação*/

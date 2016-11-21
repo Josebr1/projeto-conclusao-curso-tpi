@@ -29,7 +29,9 @@ function abrirPopupComInfo(url, info) {
     newwindow.focus();
     return false;
 }
-
+function calendario() {
+$( "#calendario" ).datepicker();
+}
 
 
 

@@ -6,7 +6,6 @@
 		$senha = "";
 		$conexao = null;
 	/*Fim da declaração*/
-
 	/*Conexão*/
 		try {
 		 	$conexao = new PDO("mysql:host=$servidor;dbname=$bancoDados", $usuario, $senha);
